@@ -2,7 +2,7 @@
 <dwquery>
   <queryparams matchcase="false" ignorewhitespace="false" useregexp="true" wholeword="false" />
   <find searchmode="selectedFiles">
-    <qtext qname="(\s*&lt;span class=&quot;?'?glyphicon glyphicon-download(-alt)?&quot;?'?&gt;&lt;\/span&gt;)?(\s*)(&lt;a[^&gt;]*href=&quot;?'?[^&quot;'&gt;]+(doc|docx|xls|xlsx|ppt|pptx|pptm|pdf|zip|rar)&quot;?'?[^&gt;]*&gt;)" qraw="true"></qtext>
+    <qtext qname="(\s*&lt;span class=&quot;?'?glyphicon glyphicon-download(-alt)?&quot;?'?&gt;&lt;\/span&gt;)?(\s*)(&lt;a[^&gt;]*href=&quot;?'?[^&quot;'&gt;]+\.(doc|docx|xls|xlsx|ppt|pptx|pptm|pdf|zip|rar)&quot;?'?[^&gt;]*&gt;)" qraw="true"></qtext>
   </find>
   <replace action="replaceText" param1="$3<span class=&quot;glyphicon glyphicon-download&quot;></span> $4" param2=""/>
 </dwquery>
