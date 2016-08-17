@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<dwquery>
-  <queryparams matchcase="false" ignorewhitespace="false" useregexp="true" wholeword="false" />
-  <find searchmode="document">
-    <qtext qname="&lt;latin&gt;&lt;em&gt;(.*?)&lt;/em&gt;&lt;/latin&gt;" qraw="true"></qtext>
-  </find>
-  <replace action="replaceText" param1="<latin>$1</latin>" param2=""/>
-</dwquery>
