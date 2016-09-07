@@ -70,3 +70,14 @@ This **latinNamesItalics.dwr** script is used to italicize known latin names for
 **After:**
 
     <p><em>Sebastes fasciatus</em></p>
+    
+## dfoLinkFinder
+The **dfoLinkFinder.dwr** finds any link that uses a web address from dfo-mpo.gc.ca. This is useful more so on files within dfo-mpo.gc.ca to help find links that should start with a / and not http.
+
+### Example
+**Will find:**
+
++ href="http://www.dfo-mpo.gc.ca/
++ href="http://dfo-mpo.gc.ca/
++ href="http://wwwstg.ncr.dfo-mpo.ca/
++ href="http://wwwdev.ncr.dfo-mpo.ca/
