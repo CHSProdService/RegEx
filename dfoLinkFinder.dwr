@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<dwquery>
+  <queryparams matchcase="false" ignorewhitespace="false" useregexp="true" wholeword="false" />
+  <find searchmode="site">
+    <qtext qname="href=&quot;(http:\/\/(www\.)?(www(stg|dev)\.ncr\.dfo-mpo\.ca|dfo-mpo.gc.ca))\/" qraw="true"></qtext>
+  </find>
+  <replace action="replaceText" param1="" param2=""/>
+</dwquery>
