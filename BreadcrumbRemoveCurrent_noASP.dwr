@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<dwquery>
+  <queryparams matchcase="false" ignorewhitespace="false" useregexp="true" wholeword="false" />
+  <find searchmode="selectedFiles">
+    <qtext qname="(&lt;ol class=\&quot;breadcrumb\&quot;&gt;(?:(?:\s*&lt;li&gt;\s*&lt;a href=\&quot;.*?&quot;&gt;.*?&lt;\/a&gt;\s*&lt;\/li&gt;){1,})?)\s*&lt;li(?: class=&quot;active&quot;)?&gt;.*?&lt;\/li&gt;(\s*&lt;\/ol&gt;)" qraw="true"></qtext>
+  </find>
+  <replace action="replaceText" param1="$1$2" param2=""/>
+</dwquery>
