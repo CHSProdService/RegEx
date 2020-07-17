@@ -1,0 +1,44 @@
+____________________
+    BEFORE
+____________________
+
+
+// with BcRoot inside the breadcrumbs variable
+<!--#include virtual="\/science\/theme-wet4\/asp\/init.asp" -->\s*<%\s*Title\s*=\s*".*?"\s*Breadcrumb\s*=\s*"BcRoot\s*(.*?)"\s*%>\s*<!--#include virtual="\/science\/theme-wet4\/asp\/template-head.asp" -->\s*<!-- MainContentStart -->
+
+
+// with BcRoot outside of the breadcrumb variable
+<!--#include virtual="\/science\/theme-wet4\/asp\/init.asp" -->\s*<%\s*Title\s*=\s*".*?"\s*Breadcrumb\s*=\s*BcRoot\s*\+\s*"(.*?)"\s*%>\s*<!--#include virtual="\/science\/theme-wet4\/template-head.asp"-->\s*<!-- MainContentStart -->
+
+
+
+____________________
+    AFTER
+____________________
+
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr">
+<!--<![endif]-->
+<!-- DFO WET 4.0.26 template -->
+
+<head>
+    <!--#include virtual="/science/theme/head-fra.html"-->
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+    <script>
+        /*-- This variable is used for changing the standard breadcrumb in an easy way --*/
+        var breadcrumb = "<li><a href='/science/index-fra.htm'>Science et recherche</a></li>$1";
+
+        /*-- This variable changes the date modified --*/
+        var dateModified = "";
+
+    </script>
+    <!--#include virtual="/science/theme/nav-fra.html"-->
+    <main role="main" property="mainContentOfPage" class="container">
+        <!------------------------------>
+        <!-- Main content starts here -->
+        <!------------------------------>

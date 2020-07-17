@@ -1,0 +1,5 @@
+find
+<!--#include virtual="\/theme-js\/head-fra\.html"-->\s*<meta name="description" id="descriptionMeta" content="(.*?)">\s*<meta name="dcterms.title" id="titleMeta" content="(.*?)">
+
+replace
+<!--#include virtual="/theme-js/head-fra.html"--><title>$2</title><meta name="description" id="descriptionMeta" content="$1"><meta name="dcterms.title" id="titleMeta" content="$2">

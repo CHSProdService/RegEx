@@ -1,0 +1,23 @@
+____________________
+    BEFORE
+____________________
+
+
+<!-- MainContentEnd -->\s*<!--#include virtual="\/science\/theme-wet4\/asp\/template-footer.asp"-->
+
+
+____________________
+    AFTER
+____________________
+
+
+
+        <!------------------------------>
+        <!--- Main content ends here --->
+        <!------------------------------>
+        <!--#include virtual="/science/theme/footer-fra.html"-->
+    </main>
+    <!--#include virtual="/science/theme/end-fra.html"-->
+</body>
+
+</html>

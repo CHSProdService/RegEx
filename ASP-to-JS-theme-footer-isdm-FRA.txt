@@ -1,0 +1,23 @@
+____________________
+    BEFORE
+____________________
+
+
+<!-- MainContentEnd -->\s*<!--#include virtual="\/theme-wet4\/template-footer.asp"-->
+
+
+____________________
+    AFTER
+____________________
+
+
+
+        <!------------------------------>
+        <!--- Main content ends here --->
+        <!------------------------------>
+        <!--#include virtual="/theme-js/footer-fra.html"-->
+    </main>
+    <!--#include virtual="/theme-js/end-fra.html"-->
+</body>
+
+</html>
